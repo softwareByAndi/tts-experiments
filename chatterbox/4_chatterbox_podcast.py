@@ -13,6 +13,8 @@ from concurrent.futures import ThreadPoolExecutor
 import queue
 
 # File paths
+TEST_MODE = True
+MAX_TEST_FILES = 10
 INPUT_FILE = "inputs/test.md"  # Default input file
 OUTPUT_DIR = "outputs/file_test_1"  # Default output file
 MAX_LINE_LENGTH = 600  # Maximum characters per line before splitting
@@ -116,7 +118,7 @@ def main():
             if line[0] == '<':
                 user = line[1:-1]
                 continue
-            if i < 10:
+            if not TEST_MODE or i < MAX_TEST_FILES:
                 print(f"[{i+1}/{len(text_lines)}] Generating audio for line {i}...")
                 wav = model.generate(line, audio_prompt_path=VOICE_PATHS[user])
                 
