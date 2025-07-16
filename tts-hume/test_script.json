@@ -1,0 +1,24 @@
+{
+  "script": [
+    {
+      "character": "NARRATOR",
+      "utterance": "The stars twinkled overhead as she approached the castle.",
+      "voiceDirection": "Calm, measured pace with a sense of wonder. Slightly hushed tone as if telling a bedtime story. Emphasis on 'twinkled' with a hint of mysticism."
+    },
+    {
+      "character": "KING",
+      "utterance": "Who dares enter my kingdom uninvited?",
+      "voiceDirection": "Deep, booming voice with clear authority. Slightly elevated volume that resonates. Sharp emphasis on 'dares' with a threatening undertone. End with a downward inflection suggesting danger."
+    },
+    {
+      "character": "NARRATOR",
+      "utterance": "Princess Elara stepped forward, her golden cloak billowing in the night breeze.",
+      "voiceDirection": "Moderate pace with subtle tension. Quiet confidence in tone, with slight emphasis on 'golden' to highlight its importance."
+    },
+    {
+      "character": "PRINCESS",
+      "utterance": "I am Elara, daughter of the Eastern Realms. I seek audience with the Court of Stars.",
+      "voiceDirection": "Clear, refined feminine voice with quiet determination. Formal tone that conveys nobility. Slight musical quality to the words, especially on 'Eastern Realms'."
+    }
+  ]
+}

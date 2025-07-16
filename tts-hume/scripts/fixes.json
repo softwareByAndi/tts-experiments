@@ -1,0 +1,10 @@
+{
+    "title": "temp fixes",
+    "script": [
+        {
+          "character": "NARRATOR",
+          "utterance": "You almost called me Satoh again, didn't you? We've been on the same team for half a year—get my name right!",
+          "voiceDirection": "Irritated internal voice. Deliver with quick, annoyed tempo as an unspoken thought, emphasizing 'half a year' to highlight the ongoing frustration."
+        }
+    ]
+}

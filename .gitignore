@@ -1,6 +1,14 @@
+# outputs
+
 /**/outputs
 /**/outputs/**/*
+/**/archive*
+
 /tts-piper/voices/*
+
+/tts-hume/audio_output*
+/tts-hume/prev_audio/*
+/tts-hume/files/*
 
 .DS_Store
 /**/.DS_Store
