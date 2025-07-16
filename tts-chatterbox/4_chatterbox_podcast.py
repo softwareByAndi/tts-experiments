@@ -19,8 +19,8 @@ INPUT_FILE = "inputs/test.md"  # Default input file
 OUTPUT_DIR = "outputs/file_test_1"  # Default output file
 MAX_LINE_LENGTH = 600  # Maximum characters per line before splitting
 VOICE_PATHS = {
-    'DEFAULT': "inputs/voice_clone_samples/default.wav",
-    'achernar': "inputs/voice_clone_samples/achernar.wav"
+    'DEFAULT': "voices/default.wav",
+    'achernar': "voices/achernar.wav"
 }
 
 def split_long_line(line, max_length=MAX_LINE_LENGTH):

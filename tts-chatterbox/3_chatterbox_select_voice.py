@@ -30,7 +30,7 @@ print(f"Generating speech: {text}")
 # Generate with custom voice using audio reference
 # Uncomment and provide a voice sample path:
 # VOICE_SAMPLE_PATH = "../voice_samples/voice_sample_kore.wav"
-VOICE_SAMPLE_PATH = "inputs/voice_clone_samples/achernar.wav"
+VOICE_SAMPLE_PATH = "voices/achernar.wav"
 wav = model.generate(text, audio_prompt_path=VOICE_SAMPLE_PATH)
 ta.save(OUTPUT_PATH, wav, model.sr)
 
