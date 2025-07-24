@@ -20,7 +20,8 @@ OUTPUT_DIR = "outputs/file_test_1"  # Default output file
 MAX_LINE_LENGTH = 600  # Maximum characters per line before splitting
 VOICE_PATHS = {
     'DEFAULT': "voices/default.wav",
-    'achernar': "voices/achernar.wav"
+    'achernar': "voices/achernar.wav",
+    'poor': "voices/poor_recording.m4a"
 }
 
 def split_long_line(line, max_length=MAX_LINE_LENGTH):
@@ -114,21 +115,23 @@ def main():
         futures = []
         
         user = 'DEFAULT'
+        k = 0;
         for i, line in enumerate(text_lines):
             if line[0] == '<':
                 user = line[1:-1]
                 continue
             if not TEST_MODE or i < MAX_TEST_FILES:
-                print(f"[{i+1}/{len(text_lines)}] Generating audio for line {i}...")
+                print(f"[{i+1}/{len(text_lines)}] Generating audio for line {k}...")
                 wav = model.generate(line, audio_prompt_path=VOICE_PATHS[user])
                 
                 # Submit save task to thread pool
-                filepath = f"{output_dir}/{i}.wav"
+                filepath = f"{output_dir}/{k}.wav"
                 future = executor.submit(save_audio, filepath, wav, model.sr)
                 futures.append(future)
                 
                 print(f"→ Submitted save task for {os.path.basename(filepath)}")
-        
+                k += 1
+
         # Wait for all saves to complete
         print("\nWaiting for all saves to complete...")
         for future in futures:

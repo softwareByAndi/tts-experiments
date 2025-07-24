@@ -1,0 +1,23 @@
+<poor>
+
+I was teaching my community college class, and I wrote some Rust code on the board where I created a string and assigned it to one variable—[pause:0.5] normal stuff, right? Then I did what would make perfect sense in literally any other language: assigned that first variable to a second variable.
+
+Now, in most languages, you'd think: "Yeah, cool, the second variable gets a copy." Because strings are usually passed by value, that's... that's just how it works.
+
+[pause:1] 
+
+Or maybe—*maybe*—it's passed by reference, and they both point to the same value. Also fine! No drama there.
+
+But Rust? [pause:0.5] Oh no. Rust has... *opinions*.
+
+So here I am, trying to print the first variable after the assignment, and the compiler just—[pause:0.5] it has this way of telling you you've messed up that's both incredibly helpful and somehow deeply personal? Like it's disappointed in you specifically.
+
+And this student—bright kid, really sharp—looks at the error message and goes: "Why won't it compile? We just copied the string."
+
+[pause:1] 
+
+*sigh*
+
+And that's when I realized I had about thirty seconds to explain ownership, borrowing, *and* why Rust thinks copying strings willy-nilly is basically a crime against memory safety...
+
+[nervous laugh] Welcome to systems programming, everyone!
