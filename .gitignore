@@ -5,6 +5,7 @@
 /**/archive*
 
 /tts-piper/voices/*
+/tts-piper/research_tests/**/*.wav
 
 /tts-hume/audio_output*
 /tts-hume/prev_audio/*
