@@ -1,3 +1,4 @@
+- https://github.com/resemble-ai/chatterbox
 
 # chatterbox
 
